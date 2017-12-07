@@ -18,7 +18,7 @@ feelings =
 'AFRAID': 
 	['apprehensive', 'dread', 'foreboding', 'frightened', 'panicked', 'petrified', 'scared', 
 	'suspicious', 'terrified', 'wary', 'worried', 'anxious', 'tense'],
-'ANGRY': 
+'ANGRY':
  	['enraged', 'furious', 'incensed', 'indignant', 'irate', 'livid', 'outraged', 'resentful'], 
 'DISQUIET': 
 	['agitated', 'alarmed', 'discombobulated', 'disconcerted', 'disturbed', 'distressed', 

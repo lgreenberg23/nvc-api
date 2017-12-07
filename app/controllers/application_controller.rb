@@ -1,5 +1,8 @@
 class ApplicationController < ActionController::API
 
+	  include Knock::Authenticable
+  
+
 	def issue_token(payload)
 	   JWT.encode(payload, "carpediem")
 	 end
@@ -34,5 +37,12 @@ class ApplicationController < ActionController::API
  	def logged_in?
     	!!current_user
   	end
+
+  	private
+  # Define unauthorized access json response
+      def unauthorized_entity(entity_name)
+          render json: { error: "Unauthorized request" }, status:     
+          :unauthorized
+      end
   	
 end
