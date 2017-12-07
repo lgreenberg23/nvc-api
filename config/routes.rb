@@ -8,6 +8,8 @@ Rails.application.routes.draw do
     	resources :needs
     	resources :feelings
     	resources :queries
+    	resources :profiles
+  		root 'home#index'
     end
  end
 
